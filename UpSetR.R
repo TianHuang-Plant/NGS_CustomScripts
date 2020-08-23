@@ -26,6 +26,6 @@ for(i in length(names)){
 }
 
 png(paste(args$output,".png",sep=""))
-upset(fromList(lt), nintersects = NA, mainbar.y.label = "log2(Counts)",
+upset(fromList(lt), nintersects = args$nintersects, mainbar.y.label = "log2(Counts)",
          sets.x.label = "Counts", scale.intersections = "log2",mb.ratio=c(0.55,0.45), order.by = "freq")
 dev.off()
