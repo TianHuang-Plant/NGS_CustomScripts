@@ -36,7 +36,7 @@ for(i in 1:length(names)){
   lt[[names[i]]]<-tb[,col]
 }
 
-png(file=paste(args$output,".png",sep=""),width=size[1],height=size[2])
+svg(file=paste(args$output,".svg",sep=""),width=size[1],height=size[2])
 upset(fromList(lt), sets=names, nintersects = ni, mainbar.y.label = "Counts",
          sets.x.label = "Counts", mb.ratio=c(0.55,0.45), order.by = "freq")
 dev.off()
