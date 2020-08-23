@@ -10,7 +10,7 @@ parser$add_argument('-o','--output', help='Output directory plus prefix',require
 
 parser$add_argument('-n','--name', help='Name of each set',required=F)
 parser$add_argument('-s','--suffix', help='Specify the number of characters in the input suffix and name the samples using trimmed file names (ex. 4 for .bam files)',required=FALSE,default=0)
-parser$add_argument('--nintersects', help='Number of intersections to plot',required=F,default=NA)
+parser$add_argument('--nintersects', help='Number of intersections to plot',required=F,default=10)
 
 args <- parser$parse_args()
 
