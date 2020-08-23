@@ -7,8 +7,8 @@ parser <- ArgumentParser(description='Visualization of set intersections using U
 parser$add_argument('-i','--input', nargs="+", help="Tab-deliminated tables",required=TRUE)
 parser$add_argument('-c','--col', nargs="+", help="The column index",required=TRUE)
 parser$add_argument('-o','--output', help='Output directory plus prefix',required=TRUE)
-parser$add_argument('-n','--name', help='Name of each set',required=TRUE)
 
+parser$add_argument('-n','--name', help='Name of each set',required=F)
 parser$add_argument('-s','--suffix', help='Specify the number of characters in the input suffix and name the samples using trimmed file names (ex. 4 for .bam files)',required=FALSE,default=0)
 parser$add_argument('--nintersects', help='Number of intersections to plot',required=F,default=NA)
 
